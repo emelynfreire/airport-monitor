@@ -112,24 +112,32 @@ Abra **4** terminais (ou abas):
 cd airport
 go run totem_all.go subscriber.go
 ```
+<img width="1144" height="256" alt="image" src="https://github.com/user-attachments/assets/4f9a4994-1769-4f3f-b330-52a28e73670c" />
+
 
 2. Terminal B — Totem de chegada:
 ```bash
 cd airport
 go run totem_arrival.go subscriber.go
 ```
+<img width="1241" height="198" alt="image" src="https://github.com/user-attachments/assets/8521663e-2bbb-4d28-abfd-24dcd8908bd1" />
+
 
 3. Terminal C — Totem de partida:
 ```bash
 cd airport
 go run totem_departure.go subscriber.go
 ```
+<img width="1166" height="206" alt="image" src="https://github.com/user-attachments/assets/5cc16a23-8b53-4523-9ff1-ff47ff226e68" />
+
 
 4. Terminal D — Publisher (publica alguns voos):
 ```bash
 cd airport
 go run publisher.go
 ```
+<img width="961" height="304" alt="image" src="https://github.com/user-attachments/assets/0d58efd4-1f08-499b-b4a6-eac0124ebf8f" />
+
 
 > Obs.: execute sempre os arquivos `totem_x.go` **junto** com `subscriber.go`, por exemplo:  
 > `go run totem_arrival.go subscriber.go` — isso permite que a função `consume` (definida em `subscriber.go`) seja visível para o executável.
